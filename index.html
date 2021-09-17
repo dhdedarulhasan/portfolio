@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <!-- Required Title Section -->
+    <title>Portfolio website</title>
+
+    <!-- Favicon Icon Section -->
+    <link rel="shortcut icon" href="resources/img/favicon.svg" type="image/x-icon">
+
+    <!-- Font Awesome Section -->
+    <script src="https://kit.fontawesome.com/30fdb1dcd2.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap Font CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Bootstrap Section -->
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="resources/css/style.css">
+
+</head>
+<body class="vh-100 bg-dark text-light">
+
+<!-- NAVBAR html Start -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <span class="badge bg-info shadow">DH DEDARUL HASAN</span>
+        </a>
+
+        <button 
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbartogglermenu"
+        >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbartogglermenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="z-index: 999;">
+                <li class="nav-item">
+                    <a href="" class="nav-link active"
+                        data-bs-toggle="collapse"
+                        data-bs-target=".multiple-collapse"
+                        aria-expanded="false"
+                        aria-controls="about contact"
+                >Inforamation</a></li>
+                <li class="nav-item"><a href="#about" 
+                    class="nav-link"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="about"
+                >About</a></li>
+                <li class="nav-item"><a href="#contact" 
+                    class="nav-link"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="contact"
+                >Contact</a></li>
+                <!-- <li class="nav-item"><a href="forntPage.html" 
+                    class="nav-link"
+                    role="button"
+                    target="_blank"
+                >Font Page</a></li> -->
+                <li class="nav-item"><a href="page1.html" 
+                    class="nav-link"
+                    role="button"
+                    target="_blank"
+                >Page1</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a role="button" href="login.html" target="_blank" class="nav-link">Login</a>
+                </li>
+            </ul>
+          </div>
+    </div>
+
+</nav>
+<!-- NAVBAR html End -->
+
+
+<!-- HEADER html Start -->
+<header class="container fixed-top text-end mt-5">
+    <h1 class="display-1 mt-4 col">
+        Hi This is <span class="badge bg-secondary">DEDARUL HASAN</span>
+    </h1>
+    <h2 class="display-3">
+        Web Developer
+    </h2>
+    <!-- Protfolio & Email btn -->
+    <div class="btn-group mt-3">
+        <!-- Portfolio Btn -->
+        <button 
+            class="btn btn-outline-info text-uppercase" 
+            data-bs-toggle="offcanvas" 
+            data-bs-target="#portfolio" 
+            aria-controls="portfolio"
+            >
+            My Portfolio
+        </button>
+        <!-- Email Btn -->
+        <button 
+            class="btn btn-info"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#email"
+            aria-controls="email"
+            >
+            <i class="fas fa-envelope-open"></i>
+        </button>
+    </div>
+
+    <!-- About -->
+    <div class="row mt-3">
+        <div class="col-md-6 mt-3">
+            <div class="collapse multiple-collapse" id="about">
+                <div class="card card-body shadow text-start bg-dark-transparent">
+                    <h2 class="card-title text-info">About</h2>
+                    <div class="card-text">
+                        <h3 class="text-white-50 ms-3">DH Dedarul</h3>
+                        <ul class="list-unstyled ms-5">
+                            <li class="fs-5 pt-3">Web Designer</li>
+                            <li class="fs-5 pt-3">Expert In Wordpress Customization</li>
+                            <li class="fs-5 pt-3">Graphic Designer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mt-3">
+            <div class="collapse multiple-collapse" id="contact">
+                <div class="card card-body shadow text-start bg-dark-transparent">
+                    <h4 class="card-title text-info">Contact</h4>
+                    <div class="card-text">
+                        <h3 class="text-white-50 ms-3">Get In Touch:</h3>
+                        <ul class="list-unstyled ms-5">
+                            <li class="fs-5 pt-3"><i class="bi bi-house me-3 text-info"></i>Rangpur, Bangladesh</li>
+                            <li class="fs-5 pt-3"><i class="bi bi-phone me-3 text-info"></i>+880 1715-191802</li>
+                            <li class="fs-5 pt-3"><i class="bi bi-envelope me-3 text-info"></i>mddedarulhasan@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- HEADER html End -->
+
+
+<!-- Image html End -->
+<img 
+    src="https://source.unsplash.com/agPWVfDlApM" 
+    alt="https://source.unsplash.com/rendom" 
+    class="position-absolute img-fluid profile-pic top-0">
+<!-- Image html End -->
+
+
+<div class="offcanvas offcanvas-start bg-dark" id="portfolio" tabindex="-1" aria-labelledby="offcanvasPortfolioLabel">
+    <div class="offcanvas-header">
+        <h2 class="offcanvas-title text-info fs-1">Portfolio</h2>
+        <button class="btn-close btn-close-dark fs-4" aria-level="Close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p style="font-size: 1.4rem;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto expedita, modi vero aut perferendis saepe at maiores eius delectus totam?
+        </p>
+        <ul class="list-group">
+            <a href="https://dhdedarulhasan.github.io/MARBEL/" target="_blank" class="list-group-item list-group-item-info list-group-item-action fs-4">
+                <i class="fas fa-globe"></i>
+                MARBEL
+            </a>
+            <a href="https://dhdedarulhasan.github.io/Relay/" target="_blank" class="list-group-item list-group-item-info list-group-item-action fs-4">
+                <i class="fas fa-globe"></i>
+                Relay
+            </a>
+            <a href="https://dhdedarulhasan.github.io/veer/" target="_blank" class="list-group-item list-group-item-info list-group-item-action fs-4">
+                <i class="fas fa-globe"></i>
+                Veer
+            </a>
+            <a href="https://dhdedarulhasan.github.io/Marvel/" target="_blank" class="list-group-item list-group-item-info list-group-item-action fs-4">
+                <i class="fas fa-globe"></i>
+                Marvel
+            </a>
+            <a href="https://dhdedarulhasan.github.io/Switch/" target="_blank" class="list-group-item list-group-item-info list-group-item-action fs-4">
+                <i class="fas fa-globe"></i>
+                Switch
+            </a>
+            <a href="https://dhdedarulhasan.github.io/TINYONE/" target="_blank" class="list-group-item list-group-item-info list-group-item-action fs-4">
+                <i class="fas fa-globe"></i>
+                TINYONE
+            </a>
+        </ul>
+    </div>
+</div>
+
+<div class="offcanvas offcanvas-bottom bg-dark" id="email" tabindex="-1" style="height: 50vh;">
+    <div class="offcanvas-header">
+        <h2 class="offcanvas-title text-info fs-1">Contact Us</h2>
+        <button class="btn-close btn-close-white fs-4" data-bs-dismiss="offcanvas" aria-level="Close"></button>
+    </div>
+
+    <div class="offcanvas-body w-75 m-auto">
+        <form class="w-100">
+            <div class="row">
+                <div class="col"><input type="text" class="form-control" placeholder="First Name"></div>
+                <div class="col"><input type="text" class="form-control" placeholder="Last Name"></div>
+                <div class="col-12 mt-3">
+                    <textarea class="form-control" placeholder="Write a message" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-outline-info w-100 mt-3">Send</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Offcanvas html End -->
+
+<!-- Footer html Start -->
+<footer class="w-100 fixed-bottom bg-dark-transparent text-lg-start text md-center">
+    <div class="row align-items-center p-3">
+        <h2 class="col">3 YEARS EXPRIENCE IN THIS SECTION</h2>
+        <i 
+            class="
+            bi bi-bootstrap-fill
+            rounded-3
+             btn-info
+              w-100
+               col-md
+                text-center
+                 py-3
+                  mx-3
+                   fs-4"></i>
+        <div class="col ms-2 text-muted mt-sm-4 fs-4">
+            <ul class="list-unstyled d-flex flex-row justify-content-around">
+                <li>
+                    <a href="https://fb.com/whitedevil2k" target="_blank">
+                    <i class="bi bi-facebook text-white-50"></i>
+                </a></li>
+                <li>
+                    <a href="https://lnkd.in/gKtTJhhW" target="_blank">
+                    <i class="bi bi-linkedin text-white-50"></i>
+                </a></li>
+                <li>
+                    <a href="https://instagram.com/hasanrpir" target="_blank">
+                    <i class="bi bi-instagram text-white-50"></i>
+                </a></li>
+                <li>
+                    <a href="https://twitter.com/mddedarulhasan1" target="_blank">
+                    <i class="bi bi-twitter text-white-50"></i>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- Footer html End -->
+
+
+
+    <!-- bootstrap Js -->
+    <script src="vendors/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="resources/js/custom.js"></script>
+</body>
+</html>

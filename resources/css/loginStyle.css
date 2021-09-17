@@ -1,0 +1,144 @@
+/* *{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    font-size: 62.5%;
+}
+
+ul,ol{
+    list-style: none;
+}
+.shape{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+}
+.shape:first-child {
+    top: 10%;
+    left: 40%;
+    background: linear-gradient(#1845ad,#23a2f6);
+    border-radius: 50%;
+}
+.shape:last-child {
+    right: 36%;
+    bottom: 30%;
+    background: linear-gradient(to right,#ff512f,#f09819);
+    border-radius: 50%;
+}
+form {
+    position: absolute;
+    height: 37rem;
+    width: 30rem;
+    top: 15%;
+    left: 43%;
+    background: rgba(255,255,255,0.13);
+    padding: 6rem 3rem;
+    border-radius: .5rem;
+}
+form input.form-control {
+    background-color: rgba(255,255,255,0.07) !important;
+    border: none;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+form input.form-control:focus {
+    box-shadow: none;
+}
+form input.form-control::placeholder {
+    color: rgb(146, 143, 143);
+}
+form button.btn {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding: .7rem 0;
+}
+form button.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: none;
+} */
+
+
+
+.shape{
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.shape:first-child{
+    background: linear-gradient(rgb(248, 126, 12),rgba(177, 101, 3, 0.897));
+    top: 10%;
+    left: 40%;
+}
+.shape:last-child {
+    background: linear-gradient(rgb(0, 162, 255),rgb(79, 186, 228));
+    bottom: 25%;
+    right: 33%;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.13);
+    width: 20rem;
+    height: 24rem;
+    position: absolute;
+    top: 17%;
+    left: 44%;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+    padding: 1.5rem 2rem;
+}
+form h1{
+    margin-bottom: 2rem;
+}
+form input.form-control{
+    background: rgba(0, 0, 0, 0.3) !important;
+    border: none;
+    color: #fff;
+}
+form input.form-control:focus{
+    box-shadow: none;
+    color: #fff;
+}
+.btn_login {
+    border: none;
+    padding: .4rem 0;
+    color: #000;
+    border-radius: .4rem;
+}
+.btn_login:hover {
+    background: linear-gradient(#3cba54,#4267B2);
+    color: #fff;
+}
+.social_icon {
+    margin-top: 1rem;
+    display: flex;
+    margin-left: .8rem;
+}
+.social_icon div{
+    background-color: rgba(54, 53, 53, 0.705);
+    width: 7rem;
+    padding: .5rem 1rem .6rem .5rem;
+    text-align: center;
+    color: #f9fafb;
+    border-radius: .2rem;
+}
+.social_icon .fb{
+    margin-left: 1rem;
+}
+.social_icon .go i {
+    padding-right: .4rem;
+}
+.social_icon .fb i {
+    padding-right: .2rem;
+}
+.social_icon div:first-child:hover {
+    background-color: #3cba54;
+}
+.social_icon div:last-child:hover {
+    background-color: #4267B2;
+}
